@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas Bangun Datar</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hasil Perhitungan Luas</h1>
+
+    <div class="container" id="persegiPanjang"></div>
+    <div class="container" id="bujurSangkar"></div>
+    <div class="container" id="segitiga"></div>
+
+    <script>
+        // variabel untuk persegi panjang
+        let panjang = 15; // Nilai panjang persegi panjang
+        let lebar = 7;    // Nilai lebar persegi panjang
+
+        // Operator perkalian (*) digunakan untuk menghitung luas
+        let luasPersegiPanjang = panjang * lebar;
+
+        // Menampilkan hasil ke dalam elemen HTML dengan id "persegiPanjang"
+        document.getElementById('persegiPanjang').innerHTML = 
+            `<h2>Luas Persegi Panjang</h2>` +
+            `<p>Panjang: ${panjang}</p>` +
+            `<p>Lebar: ${lebar}</p>` +
+            `<p><b>Hasil Luas: ${luasPersegiPanjang}</b></p>`;
+
+        // variabel untuk bujur sangkar
+        let sisi = 10; // Nilai sisi bujur sangkar
+
+        // Operator perkalian (*) digunakan untuk menghitung luas
+        let luasBujurSangkar = sisi * sisi;
+
+        // Menampilkan hasil ke dalam elemen HTML dengan id "bujurSangkar"
+        document.getElementById('bujurSangkar').innerHTML = 
+            `<h2>Luas Bujur Sangkar</h2>` +
+            `<p>Sisi: ${sisi}</p>` +
+            `<p><b>Hasil Luas: ${luasBujurSangkar}</b></p>`;
+
+        // variabel untuk segitiga
+        let alas = 12;   // Nilai alas segitiga
+        let tinggi = 8;  // Nilai tinggi segitiga
+
+        // Operator perkalian (*) digunakan untuk menghitung luas
+        let luasSegitiga = 0.5 * alas * tinggi;
+
+        // Menampilkan hasil ke dalam elemen HTML dengan id "segitiga"
+        document.getElementById('segitiga').innerHTML = 
+            `<h2>Luas Segitiga</h2>` +
+            `<p>Alas: ${alas}</p>` +
+            `<p>Tinggi: ${tinggi}</p>` +
+            `<p><b>Hasil Luas: ${luasSegitiga}</b></p>`;
+
+    </script>
+
+</body>
+</html>
